@@ -1,0 +1,12 @@
+TRAVORA ADMIN SETUP
+
+1. Open MySQL Workbench and run database/travora_database.sql (or run the CREATE TABLE admins statement if your other tables already exist).
+2. Open create_admin.py and replace YOUR_MYSQL_PASSWORD with your local MySQL root password. Do not share this password.
+3. Install dependencies: pip install flask mysql-connector-python werkzeug
+4. Run: python create_admin.py
+   Enter the admin name, email and password when prompted. The password is saved as a secure hash.
+5. Start Flask: python app.py
+6. Open http://127.0.0.1:5000/login and click Admin Login, or visit http://127.0.0.1:5000/admin/login.
+7. After admin login, the admin dashboard provides View Users and View Bookings.
+
+IMPORTANT: Existing database users table must contain id, name, email, password, created_at. The bookings table must contain user_id, hotel_id, booking_date, travellers and status, and hotels must contain id and name.

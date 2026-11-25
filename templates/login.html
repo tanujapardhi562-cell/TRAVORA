@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Travora - Login</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#073d2c,#16835b);padding:24px}.login-wrap{width:min(920px,100%);display:grid;grid-template-columns:1fr 1fr;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px #0004}.login-image{min-height:560px;background:linear-gradient(#0003,#0005),url("images/Lonavala.jpg") center/cover;display:flex;align-items:flex-end;padding:35px;color:#fff}.login-image h1{font-size:40px;margin:0 0 8px}.login-image p{margin:0;font-size:17px}.login-form{padding:55px 45px}.brand{font-size:28px;font-weight:800;color:#123b30}.brand span{color:#0b8f5a}.login-form h2{font-size:30px;margin:35px 0 8px}.subtitle{color:#6b7280;margin-bottom:28px}.field{margin-bottom:18px}.field label{display:block;font-weight:700;margin-bottom:7px}.field input{width:100%;padding:13px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:15px;outline:none}.field input:focus{border-color:#0b8f5a;box-shadow:0 0 0 3px #0b8f5a22}.login-btn{width:100%;border:0;padding:14px;border-radius:10px;background:#0b8f5a;color:#fff;font-size:16px;font-weight:700;cursor:pointer}.login-btn:hover{background:#08764b}.message{min-height:22px;margin:12px 0;font-weight:600;color:#0b8f5a}.links{text-align:center;margin-top:18px;color:#6b7280}.links a{color:#0b8f5a;font-weight:700;text-decoration:none}.back{text-align:center;margin-top:24px}.back a{color:#0b8f5a;text-decoration:none;font-weight:700}@media(max-width:750px){.login-wrap{grid-template-columns:1fr}.login-image{min-height:250px}.login-form{padding:35px 25px}}
+</style>
+</head>
+<body>
+<div class="login-wrap">
+  <div class="login-image"><div><h1>Explore Maharashtra</h1><p>Login to plan your next memorable journey with Travora.</p></div></div>
+  <div class="login-form">
+    <div class="brand">🌄 Travora</div>
+    <h2>Welcome Back!</h2><p class="subtitle">Login to continue your travel journey.</p>
+    <form method="POST" action="/login">
+      {% if error %}<div class="message" style="color:#b42318;margin-bottom:12px;">{{ error }}</div>{% endif %}
+      <div class="field"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" placeholder="Enter your email" required></div>
+      <div class="field"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" placeholder="Enter your password" required></div>
+      <button class="login-btn" type="submit">🔐 Login</button>
+    </form>
+    <div class="links">New to Travora? <a href="register.html">Create an account</a></div>
+    <div class="links" style="margin-top:14px;">Admin? <a href="/admin/login">Admin Login</a></div>
+    <div class="back"><a href="/">← Back to Home</a></div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

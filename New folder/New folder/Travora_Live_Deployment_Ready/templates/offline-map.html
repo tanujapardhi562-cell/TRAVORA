@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travora - Offline Road Map</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.11.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}">
+<style>
+html,body{height:100%;margin:0}.map-shell{height:calc(100vh - 150px)}#map{height:100%}.maplibregl-ctrl-attrib{font-size:10px}.offline-badge{position:fixed;right:16px;top:72px;z-index:20;background:#fff;padding:8px 12px;border-radius:20px;box-shadow:0 2px 12px #0002;font-weight:700}.offline-badge.ready{background:#e8f7ed;color:#176b35}.offline-badge.online{background:#fff8df;color:#765600}.popup-card{font-family:Arial,sans-serif}.popup-card strong{font-size:16px}.place-list{max-height:calc(100vh - 260px);overflow:auto}
+</style>
+</head>
+<body>
+<header class="map-header">
+  <div class="brand">🌄 <strong>Travora</strong> <span>• Offline Road Map</span></div>
+  <a class="home-link" href="/dashboard">← Dashboard</a>
+</header>
+<section class="map-toolbar">
+  <div class="search-wrap"><span class="search-icon">🔎</span><input id="search" type="search" autocomplete="off" placeholder="Search Lonavala, Alibaug, Mahabaleshwar..."><div id="suggestions" class="suggestions" hidden></div></div>
+  <button id="reset" class="tool-btn">↺ Reset</button>
+  <button id="locate" class="tool-btn location-btn">📍 My Location</button>
+</section>
+<div id="offlineBadge" class="offline-badge">Preparing offline map…</div>
+<div id="status" class="status">Loading local road data…</div>
+<main class="map-shell">
+  <div id="map"></div>
+  <aside class="places-panel"><div class="panel-head"><h2>Popular Places</h2><span id="resultCount">0</span></div><p class="panel-note">Road data is stored locally in Travora. Internet is not required after the map libraries have been cached once.</p><div id="placeList" class="place-list"></div></aside>
+</main>
+<div class="map-note"><strong>Offline road data:</strong> OpenStreetMap • <strong>Extract:</strong> BBBike • <strong>Area:</strong> western Maharashtra extract.</div>
+<script src="https://unpkg.com/maplibre-gl@5.11.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@4.3.0/dist/pmtiles.js"></script>
+<script src="{{ url_for('static', filename='js/offline-map.js') }}"></script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('{{ url_for("static", filename="js/service-worker.js") }}').catch(()=>{});}
+</script>
+</body>
+</html>

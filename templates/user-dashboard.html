@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Travora - User Dashboard</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7f6;color:#1f2937}header{background:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0001}.logo{font-size:28px;font-weight:800;color:#123b30}.logo span{color:#0b8f5a}.logout{background:#0b8f5a;color:#fff;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:700}.container{max-width:1150px;margin:auto;padding:40px 20px}.welcome{background:linear-gradient(120deg,#073d2c,#16835b);color:#fff;border-radius:18px;padding:35px;margin-bottom:30px}.welcome h1{margin:0 0 10px;font-size:32px}.welcome p{margin:0;font-size:17px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}.card{background:#fff;border-radius:15px;padding:28px;text-align:center;box-shadow:0 4px 18px #00000012}.icon{font-size:40px;margin-bottom:12px}.card h2{margin:8px 0}.card p{color:#6b7280;min-height:44px;line-height:1.5}.btn{display:inline-block;text-decoration:none;background:#0b8f5a;color:#fff;padding:10px 18px;border-radius:8px;font-weight:700}.btn:hover,.logout:hover{background:#08764b}.footer{text-align:center;color:#6b7280;margin-top:35px}@media(max-width:600px){header{padding:16px 20px}.welcome h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="logo">🌄 Travora</div><a class="logout" href="/logout">Logout</a></header>
+<div class="container">
+<div class="welcome"><h1 id="welcomeText">Welcome to Travora! 👋</h1><p>Plan your perfect Maharashtra trip and explore amazing destinations.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🏞️</div><h2>Explore Places</h2><p>Discover beautiful tourist destinations in Maharashtra.</p><a class="btn" href="/places">Explore</a></div>
+<div class="card"><div class="icon">🏨</div><h2>Hotels</h2><p>Find hotels and accommodation for your trip.</p><a class="btn" href="/hotels">View Hotels</a></div>
+<div class="card"><div class="icon">🗺️</div><h2>Explore Map</h2><p>Find tourist locations using the Travora map.</p><a class="btn" href="offline-map.html">Open Map</a></div>
+<div class="card"><div class="icon">📅</div><h2>My Trip</h2><p>Plan and manage your Maharashtra trip.</p><a class="btn" href="/itinerary">Plan Trip</a></div>
+<div class="card"><div class="icon">🎫</div><h2>My Bookings</h2><p>View your hotel and travel bookings.</p><a class="btn" href="/booking">Bookings</a></div>
+<div class="card"><div class="icon">👤</div><h2>My Profile</h2><p>View your account information.</p><a class="btn" href="/profile">Profile</a></div>
+</div>
+<div class="footer">© 2026 Travora | BSc IT Project</div>
+</div>
+<script>
+document.getElementById('welcomeText').textContent='Welcome to Travora, {{ session.get('user_name', 'Traveler') }}! 👋';
+</script>
+</body>
+</html>

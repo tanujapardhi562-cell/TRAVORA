@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Travora - Hotels</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7f6;color:#1f2937}header{background:#fff;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0001;position:sticky;top:0;z-index:5}.logo{font-size:27px;font-weight:800;color:#123b30}.logo span{color:#0b8f5a}.back{background:#0b8f5a;color:#fff;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:700}.container{max-width:1100px;margin:auto;padding:38px 20px}.hero{background:linear-gradient(120deg,#073d2c,#16835b);color:white;border-radius:18px;padding:32px;margin-bottom:25px}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:0;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.card{background:#fff;border-radius:15px;padding:23px;box-shadow:0 4px 18px #00000012}.card h2{margin:8px 0 10px;color:#123b30}.card p{line-height:1.6;color:#5b6573}.tag{display:inline-block;background:#e7f6ef;color:#08764b;padding:5px 10px;border-radius:20px;font-size:13px;font-weight:700;margin:3px}.price{font-weight:800;color:#0b8f5a;font-size:18px}.action{display:inline-block;margin-top:10px;text-decoration:none;background:#0b8f5a;color:#fff;padding:9px 14px;border-radius:7px;font-weight:700}.info{background:#fff;border-left:5px solid #0b8f5a;padding:18px 20px;border-radius:10px;margin-top:22px;box-shadow:0 3px 12px #0000000d}footer{text-align:center;color:#6b7280;padding:25px}@media(max-width:600px){header{padding:14px 18px}.logo{font-size:23px}.hero h1{font-size:26px}}
+</style></head><body><header><div class="logo">🌄 Travora</div><a class="back" href="user-dashboard.html">← Dashboard</a></header><main class="container"><section class="hero"><h1>🏨 Hotels & Stays in Maharashtra</h1><p>Find comfortable stays near popular tourist destinations and choose accommodation according to your trip.</p></section><div class="grid">
+{% if error %}<div class="info" style="color:#b42318;">{{ error }}</div>{% endif %}
+{% for hotel in hotels %}
+<div class="card">
+  <h2>🏨 {{ hotel.name }}</h2>
+  <span class="tag">{{ hotel.location }}</span>
+  <span class="tag">{{ hotel.rating }} ⭐</span>
+  <p>{{ hotel.description }}</p>
+  <p class="price">₹{{ '%.0f'|format(hotel.price) }} / night</p>
+  <a class="action" href="/booking?hotel_id={{ hotel.id }}">Book Now</a>
+</div>
+{% else %}
+<div class="card"><h2>No hotels available</h2><p>Run the Travora MySQL database script and refresh this page.</p></div>
+{% endfor %}
+</div><div class="info"><strong>How it works:</strong> Select a destination → choose a hotel → check details → proceed to booking. Hotel data is loaded from the Travora MySQL database.</div></main><footer>© 2026 Travora | BSc IT Project</footer></body></html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mahabaleshwar - Maharashtra Tourism</title>
+
+    <link rel="stylesheet" href="destination.css">
+</head>
+
+<body data-map-place="Mahabaleshwar">
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            Maharashtra Tourism
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Places</a>
+            <a href="#">Hotels</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero mahabaleshwar-hero">
+
+        <div class="hero-content">
+
+            <h1>Explore Mahabaleshwar</h1>
+
+            <p>
+                Discover the beautiful hill station of Maharashtra,
+                famous for mountains, viewpoints, waterfalls and strawberries.
+            </p>
+
+            <button onclick="scrollToPlaces()">
+                Explore Tourist Places
+            </button>
+
+            <button class="map-btn" onclick="openMap()">
+                📍 View on Map
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="container">
+
+        <h2>About Mahabaleshwar</h2>
+
+        <p class="about">
+
+            Mahabaleshwar is a popular hill station in the Western Ghats
+            of Maharashtra. It is known for its beautiful valleys,
+            viewpoints, waterfalls, forests and pleasant climate.
+            The destination is also famous for strawberries and
+            scenic landscapes.
+
+        </p>
+
+    </section>
+
+
+    <!-- Tourist Places -->
+    <section class="container" id="places">
+
+        <h2>Top Tourist Places in Mahabaleshwar</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="place-icon">🌄</div>
+
+                <h3>Arthur's Seat</h3>
+
+                <p>
+                    One of the most famous viewpoints offering
+                    spectacular views of valleys and mountains.
+                </p>
+
+                <span>📍 Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Arthur%E2%80%99s%20Seat">View Details</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="place-icon">🌅</div>
+
+                <h3>Wilson Point</h3>
+
+                <p>
+                    A popular viewpoint known for beautiful
+                    sunrise views.
+                </p>
+
+                <span>📍 Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Wilson%20Point">View Details</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="place-icon">💧</div>
+
+                <h3>Lingmala Waterfall</h3>
+
+                <p>
+                    A scenic waterfall surrounded by lush greenery,
+                    especially attractive during monsoon.
+                </p>
+
+                <span>📍 Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Lingmala%20Waterfall">View Details</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="place-icon">🏰</div>
+
+                <h3>Pratapgad Fort</h3>
+
+                <p>
+                    A historic fort associated with Chhatrapati
+                    Shivaji Maharaj.
+                </p>
+
+                <span>📍 Near Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Pratapgad%20Fort">View Details</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="place-icon">🌊</div>
+
+                <h3>Venna Lake</h3>
+
+                <p>
+                    A popular lake where visitors can enjoy
+                    boating and peaceful surroundings.
+                </p>
+
+                <span>📍 Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Venna%20Lake">View Details</a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="place-icon">🌿</div>
+
+                <h3>Mapro Garden</h3>
+
+                <p>
+                    A popular attraction known for strawberries,
+                    food products and beautiful gardens.
+                </p>
+
+                <span>📍 Near Mahabaleshwar</span>
+
+                <a class="details-btn" href="/place-details.html?place=Mapro%20Garden">View Details</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Activities -->
+    <section class="container">
+
+        <h2>Things To Do</h2>
+
+        <div class="activities">
+
+            <div>🥾 Trekking</div>
+            <div>📸 Photography</div>
+            <div>🚣 Boating</div>
+            <div>🍓 Strawberry Picking</div>
+            <div>🌄 Sightseeing</div>
+            <div>🌿 Nature Walk</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Best Time -->
+    <section class="container">
+
+        <h2>Best Time to Visit</h2>
+
+        <div class="season-box">
+
+            <div>
+                <h3>🌧️ Monsoon</h3>
+                <p>June - September</p>
+                <p>
+                    Best for waterfalls and greenery.
+                </p>
+            </div>
+
+            <div>
+                <h3>❄️ Winter</h3>
+                <p>October - February</p>
+                <p>
+                    Pleasant weather for sightseeing.
+                </p>
+            </div>
+
+            <div>
+                <h3>☀️ Summer</h3>
+                <p>March - May</p>
+                <p>
+                    Good for hill station trips and strawberries.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How To Reach -->
+    <section class="container">
+
+        <h2>How to Reach Mahabaleshwar</h2>
+
+        <div class="reach">
+
+            <div>
+                <h3>🚗 By Road</h3>
+                <p>
+                    Mahabaleshwar is well connected by road
+                    with Pune, Mumbai and nearby cities.
+                </p>
+            </div>
+
+            <div>
+                <h3>🚌 By Bus</h3>
+                <p>
+                    State transport and private buses are
+                    available from major nearby cities.
+                </p>
+            </div>
+
+            <div>
+                <h3>✈️ By Air</h3>
+                <p>
+                    Pune Airport is a major airport option
+                    for reaching Mahabaleshwar.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Food -->
+    <section class="container">
+
+        <h2>Famous Food</h2>
+
+        <div class="food">
+
+            <div>🍓 Fresh Strawberries</div>
+            <div>🥤 Strawberry Cream</div>
+            <div>🍫 Chocolate</div>
+            <div>🌽 Roasted Corn</div>
+            <div>🍛 Maharashtrian Food</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Plan -->
+    <section class="plan">
+
+        <h2>Plan Your Mahabaleshwar Trip</h2>
+
+        <p>
+            Explore tourist attractions, hotels, restaurants
+            and travel information.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Maharashtra Tourism | Mahabaleshwar</p>
+
+    </footer>
+
+
+    <script src="js/destination.js"></script>
+
+</body>
+
+</html>

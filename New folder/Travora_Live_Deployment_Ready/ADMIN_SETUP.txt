@@ -1,0 +1,30 @@
+TRAVORA ADMIN SETUP (IMPLEMENTED)
+
+WHAT THIS DOES
+- Normal users register through /register and are stored in the users table.
+- Admin is created separately using create_admin.py and stored in the admins table.
+- A normal user cannot become an admin by registering on the website.
+- Admin signs in at /admin/login and gets the admin dashboard.
+- Admin dashboard provides registered users and booking information.
+
+STEPS
+1. Open MySQL Workbench and run database/travora_database.sql.
+   This creates travora_db and the users, admins, places, hotels, bookings and itinerary tables.
+2. Make sure the MySQL password in app.py is your own local MySQL password (or set TRAVORA_DB_PASSWORD).
+3. Install dependencies:
+   pip install flask mysql-connector-python werkzeug
+4. From the project folder, run:
+   python create_admin.py
+5. Enter the admin name, email and password when prompted.
+   Password must contain at least 8 characters. It is stored as a secure hash.
+   If the email already exists in admins, this script updates that admin's name and password.
+6. Start the website:
+   python app.py
+7. Open:
+   http://127.0.0.1:5000/admin/login
+
+IMPORTANT
+- The admin account is not created from the public user registration form.
+- Keep the admin password private.
+- Admin routes require an admin session.
+- If you have already created the database, ensure the admins table exists.

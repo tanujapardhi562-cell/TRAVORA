@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Alibag - Maharashtra Tourism</title>
+
+    <link rel="stylesheet" href="destination.css">
+
+</head>
+
+<body data-map-place="Alibaug">
+
+
+<header>
+
+    <div class="logo">
+        Maharashtra Tourism
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="#">Places</a>
+
+        <a href="#">Hotels</a>
+
+    </nav>
+
+</header>
+
+
+<!-- Hero -->
+
+<section class="hero alibag-hero">
+
+    <div class="hero-content">
+
+        <h1>Explore Alibag</h1>
+
+        <p>
+            Enjoy beautiful beaches, historic forts,
+            sea views and peaceful coastal landscapes.
+        </p>
+
+        <button onclick="scrollToPlaces()">
+            Explore Tourist Places
+        </button>
+
+        <button class="map-btn"
+                onclick="openMap()">
+            📍 View on Map
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- About -->
+
+<section class="container">
+
+    <h2>About Alibag</h2>
+
+    <p class="about">
+
+        Alibag is a beautiful coastal destination in
+        Maharashtra known for its beaches, forts,
+        coconut trees and Arabian Sea views.
+        It is a popular weekend destination,
+        especially for travellers from Mumbai and Pune.
+
+    </p>
+
+</section>
+
+
+<!-- Places -->
+
+<section class="container" id="places">
+
+    <h2>Top Tourist Places in Alibag</h2>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="place-icon">🏰</div>
+
+            <h3>Kolaba Fort</h3>
+
+            <p>
+                A historic sea fort located near Alibag
+                beach and accessible depending on tide.
+            </p>
+
+            <span>📍 Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Kolaba%20Fort">View Details</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="place-icon">🏖️</div>
+
+            <h3>Alibag Beach</h3>
+
+            <p>
+                A popular beach offering beautiful
+                Arabian Sea views and relaxing surroundings.
+            </p>
+
+            <span>📍 Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Alibag%20Beach">View Details</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="place-icon">🏖️</div>
+
+            <h3>Kashid Beach</h3>
+
+            <p>
+                A scenic beach known for its sandy shores
+                and beautiful coastal scenery.
+            </p>
+
+            <span>📍 Near Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Kashid%20Beach">View Details</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="place-icon">🏰</div>
+
+            <h3>Korlai Fort</h3>
+
+            <p>
+                A historic coastal fort offering scenic
+                views of the surrounding area.
+            </p>
+
+            <span>📍 Near Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Korlai%20Fort">View Details</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="place-icon">🌊</div>
+
+            <h3>Nagaon Beach</h3>
+
+            <p>
+                A popular beach destination suitable
+                for relaxation and water activities.
+            </p>
+
+            <span>📍 Near Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Nagaon%20Beach">View Details</a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="place-icon">🌴</div>
+
+            <h3>Varsoli Beach</h3>
+
+            <p>
+                A peaceful coastal location surrounded
+                by greenery and coconut trees.
+            </p>
+
+            <span>📍 Alibag</span>
+
+            <a class="details-btn" href="/place-details.html?place=Varsoli%20Beach">View Details</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Activities -->
+
+<section class="container">
+
+    <h2>Things To Do</h2>
+
+    <div class="activities">
+
+        <div>🏖️ Beach Visit</div>
+
+        <div>🏰 Fort Exploration</div>
+
+        <div>📸 Photography</div>
+
+        <div>🌊 Water Activities</div>
+
+        <div>🚗 Road Trip</div>
+
+        <div>🌅 Sunset Viewing</div>
+
+    </div>
+
+</section>
+
+
+<!-- Best Time -->
+
+<section class="container">
+
+    <h2>Best Time to Visit</h2>
+
+    <div class="season-box">
+
+        <div>
+
+            <h3>🌧️ Monsoon</h3>
+
+            <p>June - September</p>
+
+            <p>
+                Green landscapes and pleasant coastal scenery.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>❄️ Winter</h3>
+
+            <p>October - February</p>
+
+            <p>
+                Comfortable weather for beach visits.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>☀️ Summer</h3>
+
+            <p>March - May</p>
+
+            <p>
+                Suitable for early morning and evening
+                beach visits.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Reach -->
+
+<section class="container">
+
+    <h2>How to Reach Alibag</h2>
+
+    <div class="reach">
+
+        <div>
+
+            <h3>🚗 By Road</h3>
+
+            <p>
+                Alibag can be reached by road from
+                Mumbai, Pune and nearby cities.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>⛴️ By Ferry</h3>
+
+            <p>
+                Ferry services may be available from
+                Mumbai depending on the season and
+                operating conditions.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>🚌 By Bus</h3>
+
+            <p>
+                Bus services connect Alibag with
+                surrounding cities and towns.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Food -->
+
+<section class="container">
+
+    <h2>Famous Food</h2>
+
+    <div class="food">
+
+        <div>🐟 Fish Thali</div>
+
+        <div>🍤 Seafood</div>
+
+        <div>🥥 Coconut-based Food</div>
+
+        <div>🍛 Maharashtrian Food</div>
+
+        <div>🍹 Sol Kadhi</div>
+
+    </div>
+
+</section>
+
+
+<!-- Plan -->
+
+<section class="plan">
+
+    <h2>Plan Your Alibag Trip</h2>
+
+    <p>
+        Discover beaches, forts, hotels and
+        travel experiences in Alibag.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Maharashtra Tourism | Alibag</p>
+
+</footer>
+
+
+<script src="js/destination.js"></script>
+
+</body>
+
+</html>

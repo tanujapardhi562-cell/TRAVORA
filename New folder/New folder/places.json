@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Lonavala",
+    "city": "Pune",
+    "category": "Hill Station",
+    "latitude": 18.7546,
+    "longitude": 73.4062
+  },
+  {
+    "name": "Khandala",
+    "city": "Pune",
+    "category": "Hill Station",
+    "latitude": 18.758,
+    "longitude": 73.376
+  },
+  {
+    "name": "Karla Caves",
+    "city": "Lonavala",
+    "category": "Historical",
+    "latitude": 18.7897,
+    "longitude": 73.4789
+  },
+  {
+    "name": "Pawna Lake",
+    "city": "Maval, Pune",
+    "category": "Lake",
+    "latitude": 18.638,
+    "longitude": 73.488
+  },
+  {
+    "name": "Rajmachi Fort",
+    "city": "Lonavala",
+    "category": "Fort",
+    "latitude": 18.8326,
+    "longitude": 73.3945
+  },
+  {
+    "name": "Gateway of India",
+    "city": "Mumbai",
+    "category": "Historical",
+    "latitude": 18.922,
+    "longitude": 72.8347
+  },
+  {
+    "name": "Alibaug",
+    "city": "Raigad",
+    "category": "Beach",
+    "latitude": 18.6414,
+    "longitude": 72.8722
+  },
+  {
+    "name": "Sinhagad Fort",
+    "city": "Pune",
+    "category": "Fort",
+    "latitude": 18.3663,
+    "longitude": 73.7559
+  },
+  {
+    "name": "Mahabaleshwar",
+    "city": "Satara",
+    "category": "Hill Station",
+    "latitude": 17.9307,
+    "longitude": 73.6477
+  },
+  {
+    "name": "Ajanta Caves",
+    "city": "Chhatrapati Sambhajinagar",
+    "category": "Historical",
+    "latitude": 20.5519,
+    "longitude": 75.7033
+  },
+  {
+    "name": "Ellora Caves",
+    "city": "Chhatrapati Sambhajinagar",
+    "category": "Historical",
+    "latitude": 20.0268,
+    "longitude": 75.1793
+  }
+]

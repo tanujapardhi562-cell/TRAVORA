@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lonavala - Maharashtra Tourism</title>
+
+    <link rel="stylesheet" href="lonavla.css">
+</head>
+
+<body data-map-place="Lonavala">
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Maharashtra Tourism</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Places</a>
+            <a href="#">Hotels</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Explore Lonavala</h1>
+
+            <p>
+                Discover the beautiful hill station of Maharashtra,
+                surrounded by mountains, waterfalls, forts and greenery.
+            </p>
+
+            <button onclick="scrollToPlaces()">
+                Explore Tourist Places
+            </button>
+
+            <button class="map-btn" onclick="openMap()">
+                📍 View on Map
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="container">
+
+        <h2>About Lonavala</h2>
+
+        <p class="about">
+            Lonavala is a beautiful hill station located in the Sahyadri
+            mountain range of Maharashtra. It is a popular destination
+            for nature lovers, families, friends, couples and trekking
+            enthusiasts. Lonavala is famous for its scenic valleys,
+            waterfalls, forts, caves, lakes and pleasant weather.
+        </p>
+
+    </section>
+
+
+    <!-- Tourist Places -->
+    <section class="container" id="places">
+
+        <h2>Top Tourist Places in Lonavala</h2>
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="place-icon">🌄</div>
+
+                <h3>Tiger Point</h3>
+
+                <p>
+                    A famous viewpoint offering beautiful views of
+                    mountains and valleys.
+                </p>
+
+                <span>📍 Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Tiger%20Point">View Details</a>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="place-icon">🌅</div>
+
+                <h3>Lion's Point</h3>
+
+                <p>
+                    A scenic viewpoint famous for beautiful landscapes,
+                    clouds and sunsets.
+                </p>
+
+                <span>📍 Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Lion%E2%80%99s%20Point">View Details</a>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="place-icon">💧</div>
+
+                <h3>Bhushi Dam</h3>
+
+                <p>
+                    One of the popular monsoon attractions near Lonavala,
+                    surrounded by greenery.
+                </p>
+
+                <span>📍 Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Bhushi%20Dam">View Details</a>
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="place-icon">🏰</div>
+
+                <h3>Rajmachi Fort</h3>
+
+                <p>
+                    A historic fort and popular trekking destination
+                    surrounded by the Sahyadri mountains.
+                </p>
+
+                <span>📍 Near Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Rajmachi%20Fort">View Details</a>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="place-icon">🏯</div>
+
+                <h3>Lohagad Fort</h3>
+
+                <p>
+                    A historic hill fort popular among trekkers and
+                    adventure lovers.
+                </p>
+
+                <span>📍 Near Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Lohagad%20Fort">View Details</a>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="place-icon">🌊</div>
+
+                <h3>Pawna Lake</h3>
+
+                <p>
+                    A peaceful lake destination popular for camping,
+                    photography and nature experiences.
+                </p>
+
+                <span>📍 Near Lonavala</span>
+
+                <a class="details-btn" href="/place-details.html?place=Pawna%20Lake">View Details</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Things To Do -->
+    <section class="container">
+
+        <h2>Things To Do in Lonavala</h2>
+
+        <div class="activities">
+
+            <div>🥾 Trekking</div>
+            <div>📸 Photography</div>
+            <div>🌄 Sightseeing</div>
+            <div>🏕️ Camping</div>
+            <div>🌊 Waterfall Visit</div>
+            <div>🏰 Fort Exploration</div>
+            <div>🚗 Road Trips</div>
+            <div>🍫 Chikki Tasting</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Best Time -->
+    <section class="container">
+
+        <h2>Best Time to Visit</h2>
+
+        <div class="season-box">
+
+            <div>
+                <h3>🌧️ Monsoon</h3>
+                <p>June - September</p>
+                <p>
+                    Best for greenery, waterfalls and cloudy mountain views.
+                </p>
+            </div>
+
+            <div>
+                <h3>❄️ Winter</h3>
+                <p>October - February</p>
+                <p>
+                    Pleasant weather suitable for sightseeing and trekking.
+                </p>
+            </div>
+
+            <div>
+                <h3>☀️ Summer</h3>
+                <p>March - May</p>
+                <p>
+                    Suitable for short trips and sightseeing.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How To Reach -->
+    <section class="container">
+
+        <h2>How to Reach Lonavala</h2>
+
+        <div class="reach">
+
+            <div>
+                <h3>🚆 By Train</h3>
+                <p>
+                    Lonavala railway station is connected with Pune
+                    and Mumbai.
+                </p>
+            </div>
+
+            <div>
+                <h3>🚗 By Road</h3>
+                <p>
+                    Lonavala is easily accessible by road from Pune
+                    and Mumbai.
+                </p>
+            </div>
+
+            <div>
+                <h3>✈️ By Air</h3>
+                <p>
+                    Pune Airport is the nearest major airport option.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Famous Food -->
+    <section class="container">
+
+        <h2>Famous Food</h2>
+
+        <div class="food">
+
+            <div>🍫 Lonavala Chikki</div>
+            <div>🍬 Chocolate Fudge</div>
+            <div>🌽 Roasted Corn</div>
+            <div>🍔 Vada Pav</div>
+            <div>🍛 Misal Pav</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trip Planning -->
+    <section class="plan">
+
+        <h2>Plan Your Lonavala Trip</h2>
+
+        <p>
+            Explore tourist attractions, find hotels and restaurants,
+            and plan your journey with Maharashtra Tourism.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Maharashtra Tourism | Lonavala</p>
+
+    </footer>
+
+
+    <script src="js/lonavala.js"></script>
+
+</body>
+</html>

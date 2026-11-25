@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travora - Maharashtra Interactive Map</title>
+<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<header class="map-header">
+  <div class="brand">🌄 <strong>Travora</strong> <span>• Maharashtra Map</span></div>
+  <a class="home-link" href="index.html">← Back to Home</a>
+</header>
+
+<section class="map-toolbar">
+  <div class="search-wrap">
+    <span class="search-icon">🔎</span>
+    <input id="search" type="search" autocomplete="off"
+           placeholder="Search Lonavala, Mahabaleshwar, Alibaug, Ajanta...">
+    <div id="suggestions" class="suggestions" hidden></div>
+  </div>
+  <button id="reset" class="tool-btn">↺ Reset</button>
+  <button id="locate" class="tool-btn location-btn">📍 My Location</button>
+</section>
+
+<div id="status" class="status">Loading Maharashtra road map...</div>
+
+<main class="map-shell">
+  <div id="map"></div>
+  <aside class="places-panel">
+    <div class="panel-head">
+      <h2>Popular Places</h2>
+      <span id="resultCount">0</span>
+    </div>
+    <p class="panel-note">Search a place and the map will zoom and focus on its exact saved coordinates.</p>
+    <div id="placeList"></div>
+  </aside>
+</main>
+
+<div class="map-note">
+  <strong>Road map:</strong> OpenStreetMap • <strong>Map:</strong> Travora interactive map
+  • Search locations are from the local Travora place index.
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/offline-map.js"></script>
+</body>
+</html>
