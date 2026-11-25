@@ -1,1 +1,0 @@
-// Travora compatibility script.
